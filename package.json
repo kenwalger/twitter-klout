@@ -1,0 +1,29 @@
+{
+  "name": "twitter-klout",
+  "version": "0.0.1",
+  "bin": "./app.js",
+  "description": "Node.js app to get the Klout status based on a Twitter username",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenwalger/twitter-klout.git"
+  },
+  "keywords": [
+    "Node",
+    "Twitter",
+    "Klout",
+    "JSON"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bin_test": "twitter-klout kenwalger"
+  },
+  "author": "Ken W. Alger",
+  "email": "ken@kenwalger.com",
+  "url": "http://www.kenwalger.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenwalger/twitter-klout/issues"
+  },
+  "homepage": "https://github.com/kenwalger/twitter-klout#readme"
+}
