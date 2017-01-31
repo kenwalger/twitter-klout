@@ -1,4 +1,10 @@
+/**
+ * Created by Ken W. Alger on 1/30/2017.
+ */
+
+
 var http = require("http");
+var config = require("./config.js");
 
 // Print Message
 function printMessage(username, score, day, week, month) {
@@ -18,7 +24,7 @@ function get(twitterUser) {
 	// Connect to the Klout API with the Twitter User name
 	// http://api.klout.com/v2/identity.json/twitter?screenName={twitterUser}&key={KLOUT-API-KEY}
 	var request = http.get("http://api.klout.com/v2/identity.json/twitter?screenName="
-		+ twitterUser + "&key=" + process.env.KLOUT_API, function (response) {
+		+ twitterUser + "&key=" + config.klout.api_key, function (response) {
 			var body = "";
 			// Read the data
 			response.on('data', function (chunk) {
@@ -60,7 +66,7 @@ function getKlout(id, callback) {
 	// Connect to Klout API with id
 	// http://api.klout.com/v2/user.json/{id}/score?key={KLOUT-API-KEY}
 	var request = http.get("http://api.klout.com/v2/user.json/"
-		+ id + "/score?key=" + process.env.KLOUT_API, function (response) {
+		+ id + "/score?key=" + config.klout.api_key, function (response) {
 			var body = "";
 			// Read the data
 			response.on('data', function (chunk) {

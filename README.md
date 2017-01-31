@@ -6,6 +6,9 @@ Node.js app to get the [Klout](www.klout.com) score based on a twitter username.
 
 `npm install twitter-klout`
 
++ Obtain your own API Key from Klout at [http://developer.klout.com/member/register](http://developer.klout.com/member/register).
++ Update `config.js` to include your own API Key.
+
 ###Usage
 
 From a command prompt, run the app using
