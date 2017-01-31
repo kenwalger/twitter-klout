@@ -2,7 +2,9 @@ var http = require("http");
 
 // Print Message
 function printMessage(username, score, day, week, month) {
-	var message = "\n \n Id: " + id + "\nNetwork: " + network;
+	var message = "The Klout score for Twitter user @" + username + " is: " + score
+		+ "\nTheir score has changed " + day + " in the last day, " + week + " in the last week, and " + month
+		+ " in the last month.";
 	console.log(message);
 }
 
