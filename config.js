@@ -5,7 +5,7 @@
 var config = {};
 config.klout = {};
 
-config.klout.api_key = 'uvd8ncrkwntrp2ak523ptfyf';
+config.klout.api_key = 'YOUR_API_KEY_HERE';
 
 
 module.exports = config;

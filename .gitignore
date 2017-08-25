@@ -24,9 +24,6 @@ logs
 *.log
 npm-debug.log*
 
-# API Configuration file
-config.js
-
 # Runtime data
 pids
 *.pid
