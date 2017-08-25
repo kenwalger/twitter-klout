@@ -5,12 +5,15 @@
 
 var http = require("http");
 var config = require("./config.js");
+var os = require("os"), EOL = os.EOL;
 
 // Print Message
 function printMessage(username, score, day, week, month) {
-	var message = "The Klout score for Twitter user @" + username + " is: " + score
-		+ "\nTheir score has changed " + day + " in the last day, " + week + " in the last week, and " + month
-		+ " in the last month.";
+	var message = EOL + "The Klout score for Twitter user @" + username + " is: " + score + EOL + EOL
+		+ "Their score has changed: "+ EOL + EOL
+		+ day + " in the last day, "+ EOL + EOL
+		+ week + " in the last week, and " + EOL + EOL
+		+ month + " in the last month.";
 	console.log(message);
 }
 

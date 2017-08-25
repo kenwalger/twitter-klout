@@ -1,6 +1,6 @@
 {
   "name": "twitter-klout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": "./app.js",
   "description": "Node.js app to get the Klout status based on a Twitter username",
   "main": "app.js",
